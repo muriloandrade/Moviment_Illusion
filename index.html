@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Testing</title>
-<link href="Movimento.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="movimento.js"></script>
+<link href="moviment.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="moviment.js"></script>
 
 </head>
 
@@ -12,28 +12,26 @@
 <div id="container">
 	<div id="main">
 		<div id="top">
-			<h1 id="title">Movimento</h1>
+			<h1 id="title">Moviment Illusion</h1>
 		</div>
 		<div class="controls">
 			<button onClick="autoMove('left')"><<</button>
 			<button onClick="stop('button')" id="stopButton">Stop</button>
 			<button onClick="autoMove('right')">>></button>&nbsp;&nbsp;
-			<span id="speedString">Velocidade: &nbsp;&nbsp;</span>
+			<span id="speedString">Speed: &nbsp;&nbsp;</span>
 		</div>
 		<div class="speed">
 			<input type="range" name="speed" min="0" max="9" id="speedSlider" />
 		</div>
 		<select id="selector" onchange="getSelected()">
-			<option value="vazio"></option>
-			<option value="bola">Bola</option>
-			<option value="sinos">Sinos</option>
-			<!-- <option value="cavalo">Cavalo</option> -->
+			<option value="empty"></option>
+			<option value="ball">Soccer Ball</option>
+			<option value="bells">Bells</option>
 		</select>
-		<span style="float: right; margin-top: 5px">Imagem: &nbsp;</span>
+		<span style="float: right; margin-top: 5px">Image: &nbsp;</span>
 		<div class="animation">
-			<img src="BolaMov.png" width="600" height="600" id="fundo" name="imgBola" />
-			<img src="SinosMov.png" width="600" height="600" id="fundo" name="imgSinos" />
-			<!-- <img src="CavaloMov.png" width="600" height="600" id="fundo" name="imgCavalo" /> -->
+			<img src="ballMov.png" width="600" height="600" id="back" name="imgBall" />
+			<img src="bellsMov.png" width="600" height="600" id="back" name="imgBells" />
 			<img src="brise8px.png" width="600" height="600" id="brise" onMouseDown="manualMove()"/>
 		</div>
 	</div> 

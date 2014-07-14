@@ -61,7 +61,7 @@ img#brise {
 	float: left;
 	left: 100px;
 }
-img#fundo {
+img#back {
 	position: fixed;
 	display: block;
 	margin: auto;

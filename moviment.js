@@ -7,7 +7,7 @@ var image = "";
 function autoMove(way) {
 
 	if(!checkImage()) { 
-		alert("Selecione uma imagem");
+		alert("Select an image");
 	}
 
 	stop();
@@ -69,7 +69,7 @@ function invert() {
 
 function manualMove() {
 	if(!checkImage()) { 
-		alert("Selecione uma imagem");
+		alert("Select an image");
 	}
 
 	grid = document.getElementById("brise");
@@ -89,24 +89,19 @@ function manualMove() {
 
 function getSelected() {
 	var selector = document.getElementById("selector");
-	var bola = document.getElementsByName("imgBola");
-	var sinos = document.getElementsByName("imgSinos");
-	// var cavalo = document.getElementsByName("imgCavalo");
+	var ball = document.getElementsByName("imgBall");
+	var bells = document.getElementsByName("imgBells");
 
-	bola[0].style.visibility = "hidden";
-	sinos[0].style.visibility = "hidden";
-	// cavalo[0].style.visibility = "hidden";
+	ball[0].style.visibility = "hidden";
+	bells[0].style.visibility = "hidden";
 
 	switch (selector.value) {
-		case "bola" 	: bola[0].style.visibility = "visible";
-							image = "bola";
+		case "ball" 	: ball[0].style.visibility = "visible";
+							image = "ball";
 							break;
-		case "sinos" 	: sinos[0].style.visibility = "visible";
-							image = "sinos";
+		case "bells" 	: bells[0].style.visibility = "visible";
+							image = "bells";
 							break;
-		// case "cavalo" 	: cavalo[0].style.visibility = "visible";
-		// 					image = "cavalo";
-		// 					break;
 		default 		: image = ""; break;
 	}
 }
